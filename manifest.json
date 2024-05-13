@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Shorts remover",
+    "icons": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "version": "1.0",
+    "permissions": [
+      "activeTab"
+    ],
+    "action": {
+      "default_icon": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["script.js"],
+        "run_at":"document_start"
+      }
+    ]
+  }
+  
